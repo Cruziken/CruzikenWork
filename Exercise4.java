@@ -6,6 +6,7 @@ public class Exercise4 {
 				System.out.print("Hello World! ");
 					Scanner scanner = new Scanner(System.in);
 					System.out.print("Enter a file name: ");
+					//Either have the file in Cruziken folder or C://Users//fz3//....filename.txt
 				System.out.flush();
 					String filename = scanner.nextLine();
 					File file = new File(filename);
