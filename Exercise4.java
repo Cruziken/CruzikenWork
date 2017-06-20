@@ -5,7 +5,7 @@ public class Exercise4 {
 	public static void main(String[] args) {
 				System.out.print("Hello World! ");
 					Scanner scanner = new Scanner(System.in);
-					System.out.print("Enter a file name: ");
+					System.out.print("Enter a file name by listing it's absolute path: ");
 					//Either have the file in Cruziken folder or C://Users//fz3//....filename.txt
 				System.out.flush();
 					String filename = scanner.nextLine();
@@ -21,9 +21,8 @@ public class Exercise4 {
 					System.err.format("File does not exist\n");
 	
 	}
-			File file2 = new File("C:\\users\\fz3\\workspace\\files\\"+ filename);
-			File filecopy = new File ("C:\\users\\fz3\\workspace\\Dog\\"+ filename);
-			
+			File file2 = new File(filename);
+			File filecopy = new File ("C:\\users\\fz3\\workspace\\Dog\\TheCodingApprentice.txt");
 			BufferedReader reader;
 			PrintWriter writer;
 			
@@ -42,7 +41,7 @@ public class Exercise4 {
 				}
 				
 				}catch(IOException ioEx) {
-					System.err.println("Couldn't move to directory.");
+					System.err.println(" Couldn't move to directory.");
 			}
 				
 			}
