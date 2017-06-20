@@ -2,35 +2,24 @@ import java.io.*;
 import java.util.Scanner;
 public class Exercise3 {
 	public static void main(String[] args){
-		System.out.print("Hello World");
-		System.out.println(" Enter a file name.");
-		
-		Scanner read = new Scanner(System.in);
-		String fileinput = read.nextLine();
-		File myFile = new File(fileinput);
-		
-		 try {
-			Scanner inputFile = new Scanner(myFile);
-			FileReader fileReader = new FileReader(myFile);
-			
-			BufferedReader reader = new BufferedReader(fileReader);
-			
-			String line;
-			while ((line = reader.readLine()) != null) {
-				System.out.println(line);
+		System.out.print("Hello World! ");
+			Scanner scanner = new Scanner(System.in);
+			System.out.print("Enter a file name: ");
+		System.out.flush();
+			String filename = scanner.nextLine();
+			File file = new File(filename);
+			try {
+			Scanner input = new Scanner(file);
+				while (input.hasNext()) {
+					String num = input.nextLine();
+					System.out.print(num);
+				}
 			}
-			reader.close();
-		} catch (FileNotFoundException ex) {
-			ex.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		catch(FileNotFoundException e){
+			System.err.format("File does not exist\n");
 		}
-		 
-		 
-		
-		
-	
 	}
+}
 	
 
 }
