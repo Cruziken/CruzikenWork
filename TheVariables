@@ -1,0 +1,13 @@
+public class TheVariables {
+	 private String max_int;
+	 private String lower_divisor;
+	 private String upper_divisor;
+	 private String lower_divisor_label;
+	 private String upper_divisor_label;
+	 
+	public void Declare(){
+		max_int = 22;
+		 
+	 }
+	 
+}
