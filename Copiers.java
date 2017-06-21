@@ -1,4 +1,5 @@
 
+	
 	import java.io.BufferedReader;
 	import java.io.File;
 	import java.io.FileReader;
@@ -10,45 +11,51 @@
 	public class Copiers  {
 	
 		public void Copyit() {
-
+			//Creates an instance of ReaderandPrinters named filename
 			ReaderandPrinters filename = new ReaderandPrinters();
+			//Calls the promptFile method on filename 
 			filename.promptFile();
+			//Gets filename
 			String filename2 = filename.getFile();
+			//Creates a constructor of file2 to use as the file that will be copied
 			File file2 = new File(filename2);
+			//Creates a new instance of File named filecopy
+			//Indicates the change in repository if one occurs
 			File filecopy = new File ("C:\\Users\\fz3\\workspace\\Practice\\TheTest.txt");
+			//Creates a BufferedReader named reader.
 			BufferedReader reader;
+			//Creates a PrintWriter named writer.
 			PrintWriter writer;
-			
+			//Creates a String named line
 			String line;
-			
+			//Exception is thrown to alert the compiler of what to do if it doesn't find the file
 			try{
-				
+				//Creates a variable success that is true. If a new file is created...
 				boolean success = filecopy.createNewFile();
-				
+				//If a new file2 is created copy it over to filecopy and its repository
 				if (success) {
+					//Lets us know were we are at in the program
 					System.out.println(" I AM STARTING TO PRINT ");
+					//Creates a buffering character input string that reads the content in file2
 					reader = new BufferedReader(new FileReader(file2));
+					//Creates a printWriter that prints content of filecopy
 					writer = new PrintWriter(new FileWriter(filecopy));
-					
+					//Copies over content from file2 to filecopy
 					while ((line = reader.readLine()) != null){
+						//Closes the stream and releases any system resources associated with it
 						System.out.println("HI: " + line);
+						//Closes the stream and releases any system resources associated with it
 						writer.println(line);
 					}
+					//Closers the BufferedReader
 					reader.close();
+					//Closes the PrintWriter
 					writer.close();
 				}
-//				if (filecopy.createNewFile()  !filecopy.createNewFile()){
-//					reader = new BufferedReader(new FileReader(file2));
-//					writer = new PrintWriter(new FileWriter(filecopy));
-//					
-//					while ((line = reader.readLine()) != null){
-//						writer.println(line);
-//					}
-//					reader.close();
-//					writer.close();
-//				}
-//				
-				}catch(IOException ioEx) {
+			
+				}//Alerts the compiler of what to do in case of the exception.
+				catch(IOException ioEx) {
+				//Prints off if FileNotFoundException is true.
 					System.err.println(" Check your directory destination. It may have copied over.");
 			}			
 			}
