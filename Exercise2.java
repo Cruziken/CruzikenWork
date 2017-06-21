@@ -1,17 +1,19 @@
+
 import java.util.Scanner;
 public class Exercise2 {
 
 	public static void main(String[] args) {
+				//The line directly below prints the phrase "Hello World!"
 				System.out.print("Hello World!");
-				//The line directly above prints the phrase "Hello World!"
-				System.out.print(" Enter a word.");
 				//Prompts the user for a String.
-				Scanner scan = new Scanner(System.in);
+				System.out.print(" Enter a word.");
 				//Creates an instance of Scanner.
-				String s = scan.next();
+				Scanner scan = new Scanner(System.in);
 				//Takes the user input of a string from a command line.
-				System.out.println("Nicely done!!!");
+				String s = scan.next();
 				//Gives the user congratulations.
+				System.out.println("Nicely done!!!");
+				
 				
 				
 				
