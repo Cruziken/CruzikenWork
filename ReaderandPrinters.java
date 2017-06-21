@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class ReaderandPrinters  {
 	//Creates a Scanner named scanner
 	private static Scanner scanner = new Scanner(System.in);
+	//Creates a filename varible
 	private String filename;
 	
 	public void Proclaim(){
@@ -14,11 +15,13 @@ public class ReaderandPrinters  {
 	System.out.print("Enter a file name by listing it's absolute path: ");
 	}
 	public void promptFile(){
+		//Creates a filename variable that represents the user input
 		 filename  = scanner.nextLine();
 
 	}
 	
 	public String getFile(){
+		//Returns filename so it can be used in Copiers
 		return filename;
 	}
 	
