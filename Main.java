@@ -1,29 +1,26 @@
 
 
-public class Main {
+public class FizzBuzz {
 	
 	private void Starters(){
 		//Creates an instance of ReaderINI called exc1
 		// ReaderINI exc1 = new ReaderINI();
-		 MusicTest1 exc4 = new MusicTest1();
-		  
-		 //Creates an instance of INI called exc2
-		 //INI exc2 = new INI();
-		 //TheEnds exc3 = new TheEnds();
-		 //Calls the method iniReader on exc1
-		 //exc1.iniReader();
-		 exc4.doit();
-		 //Calls the method printers on exc2 
-		// exc2.printers();
-		 //exc3.lego();
+		//Creates an instance of TheEnds called exc2
+		 TheEnds exc2= new TheEnds();
+		//Creates an instance of MusicTest1 called exc3
+		MusicTest1 exc3 = new MusicTest1();
+		//exc1.iniReader();
+		 exc3.doit();
+		 exc2.lesgo();
+
 		 
 	}
 		//Creates the main method that starts the program
 		 public static void main (String[] args){
-			//Creates an instance of Main called mainer
-			Main mainer = new Main();
-			//Calls the Starters method on mainer
-			mainer.Starters();
+			//Creates an instance of FizzBuzz called hope
+			FizzBuzz hope = new FizzzBuzz();
+			//Calls the Starters method on hope
+			FizzBuzz.Starters();
 				 
 				 
 		
