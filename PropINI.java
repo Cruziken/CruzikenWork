@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class MusicTest1 {
+public class PropINI {
 	
 		  
 		  public void doit() {
