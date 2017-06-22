@@ -13,11 +13,25 @@ public class TheEnds {
 		//Creates a static integer called x and assigns it a value
 		private static int x= 1;
 
-public void lego() {
+public void lesgo() {
+		System.out.println("Where we at?");
 		//Creates while loop that runs until x is less than or equal to 100
-		while (x<=100){
-			System.out.print(x);
+		while (x<=max_int){
 			x++;
-		}
+		
+			if ((x%lower_divisor!=0)&&(x%upper_divisor!=0)){
+				System.out.println(x);
+			
+			}
+			else if ((x%lower_divisor==0)&&(x%upper_divisor!=0)){
+				System.out.println(lower_divisor_label);
+				}
+			else if ((x%lower_divisor!=0)&&(x%upper_divisor==0)){
+				System.out.println(upper_divisor_label);
+				}
+			else if ((x%lower_divisor==0)&&(x%upper_divisor==0)){
+				System.out.println(lower_divisor_label + upper_divisor_label);
+				}
+		}			
 }
 }
