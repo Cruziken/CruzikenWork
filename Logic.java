@@ -1,4 +1,4 @@
-public class TheEnds {
+public class Logic {
 	//Creates a static integer called max_int and assigns it a value
 		private static int max_int = 100;
 		//Creates a  integer called lower_divisor and assigns it a value
