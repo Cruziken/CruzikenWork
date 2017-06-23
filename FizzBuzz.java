@@ -3,11 +3,13 @@
 public class FizzBuzz {
 	
 	private void Starters(){
-		//Creates an instance of ReaderINI called exc1
-		// ReaderINI exc1 = new ReaderINI();
+		//Creates an instance of ReaderINI called exc3
+		// ReaderINI exc3 = new ReaderINI();
+		//Creates an instance of called ex1
+		
 		//Creates an instance of Logic called exc2
 		 Logic exc4= new Logic();
-		//Creates an instance of PropINI called exc3
+		//Creates an instance of PropINI called exc2
 		PropINI exc2 = new PropINI();
 		//exc1.iniReader();
 		 exc2.doit();
