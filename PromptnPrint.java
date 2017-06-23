@@ -2,12 +2,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Cpy implements Interfacer {
+public class PromptnPrint implements Interfacer {
 
 
 		
 		
-		public void Proclai(){
+		public void proClain(){
 			
 		//Prompts the user for a file name (absolute path).
 		//Either have the file in Cruziken folder or C://Users//fz3//....filename.txt
@@ -15,7 +15,7 @@ public class Cpy implements Interfacer {
 		}
 		
 		
-		public void ReadandSca() {
+		public void readandScan() {
 		
 		//Changes the variable named filename into a File instance.
 		File file = new File(filename);
