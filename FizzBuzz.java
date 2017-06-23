@@ -18,9 +18,9 @@ public class FizzBuzz {
 		//Creates the main method that starts the program
 		 public static void main (String[] args){
 			//Creates an instance of FizzBuzz called hope
-			FizzBuzz hope = new FizzzBuzz();
+			FizzBuzz hope = new FizzBuzz();
 			//Calls the Starters method on hope
-			FizzBuzz.Starters();
+			hope.Starters();
 				 
 				 
 		
