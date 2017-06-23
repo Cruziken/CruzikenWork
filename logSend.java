@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.Properties;
 
-public class logSend {
+public class LogSend {
 	
 
 		public void logIt  () {
