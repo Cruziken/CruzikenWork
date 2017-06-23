@@ -18,8 +18,8 @@ public class LogSend {
 				//Prints if the file to send output to does not exist
 				e1.printStackTrace();
 			}
-		}
 			System.out.println("Success!");
+		}
 }
 			
 				
