@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercise2 {
 
 	private void tellNprompt(){
-		//The line directly below prints the phrase "Hello World!"
+		//Prints the phrase "Hello World!"
 		System.out.print("Hello World!");
 		//Prompts the user for a String.
 		System.out.print(" Enter a word.");
@@ -12,9 +12,9 @@ public class Exercise2 {
 	private void scanNimput(){
 		//Creates an instance of Scanner.
 		Scanner scan = new Scanner(System.in);
-		//Takes the user input of a string from a command line.
+		//Takes the user input of a string from the command line.
 		String s = scan.next();
-		//Gives the user congratulations.
+		//Gives the user necessary congratulations.
 		System.out.println("Nicely done!!!");
 				
 	}
