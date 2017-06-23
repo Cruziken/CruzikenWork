@@ -14,7 +14,7 @@ private void Start() {
 private void Continue() {
 	
 	//Creates an instance of Cpy called fun2
-	PromptnPrint fun2 = new Cpy();
+	PromptnPrint fun2 = new PromprnPrint();
 	//Calls the proClain method on fun2
 	fun2.proClain();
 	//Calls the readandScan method on fun2
