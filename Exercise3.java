@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercise3 {
 	
 	private void deClare(){
-		//The line directly above prints the phrase "Hello World!"
+		//Prints the phrase "Hello World!"
 		System.out.print("Hello World! ");
 	}
 	private void scanNprompt(){
