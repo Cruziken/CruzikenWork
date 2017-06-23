@@ -15,7 +15,7 @@ public class Logic {
 public void lesgo() {
 		System.out.println("Where we at?");
 		//Creates while loop that runs until x is less than or equal to 100
-		while (x<=max_int){
+		while (x<max_int){
 			//Increments the x int by one for as long as the loop condition lasts
 			x++;
 			//If x is not divisible by 3 or 5 print the integer
