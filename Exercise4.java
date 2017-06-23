@@ -52,7 +52,7 @@ public class Exercise4 {
 				//Creates a String named line
 				String line;
 			
-				//Exception is thrown to alert the compiler of what to do if it doesn't find the file.
+						//Exception is thrown to alert the compiler of what to do if it doesn't find the file.
 						try{
 							//If the filecopy is or isn't equal to its new file then the following code runs
 								if (filecopy.createNewFile() || !filecopy.createNewFile()){
