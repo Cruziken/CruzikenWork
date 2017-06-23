@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.Properties;
 
-public class Dog {
+public class logSend {
 	
 
 		public void logIt  () {
