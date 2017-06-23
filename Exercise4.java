@@ -2,8 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 public class Exercise4 {
 		
-	static Scanner scanner = new Scanner(System.in);
-	public static String filename = scanner.nextLine();
+
 	
 			private void hEllo (){		
 				//Prints out the statement "Hello World".
@@ -13,14 +12,14 @@ public class Exercise4 {
 				//Prompts the user for an absolute file name.
 				//Either have the file in Cruziken folder or C://Users//fz3//....filename.txt
 				System.out.println("Enter a file name by listing it's absolute path: ");
-
 			}
 			private void scanNprint() {
 				//Creates a new instance of the scanner named scanner.
 				Scanner scanner = new Scanner(System.in);
-				//Prompts the user for an absolute file name.
-				//Either have the file in Cruziken folder or C://Users//fz3//....filename.txt
-				System.out.print("Enter a file name by listing it's absolute path: ");
+				//Prompts the user for a file name (absolute path).
+				String filename = scanner.nextLine();
+				//Changes the variable named filename into a File instance.
+				
 				//Stores variable filename as the user input requested
 				//Changes the variable named filename into a file instance.
 				File file = new File(filename);
@@ -40,11 +39,7 @@ public class Exercise4 {
 						catch(FileNotFoundException e){
 						//Prints off if FileNotFoundException is true
 						System.err.format("File does not exist\n");
-						
-					}
-		
-		}
-			public void copyNow(){
+
 				//Creates a new instance of File named file2 as an equivalent of filename		
 				File file2 = new File(filename);
 				//Creates a new instance of File named filecopy
@@ -79,21 +74,22 @@ public class Exercise4 {
 						catch(IOException ioEx) {
 							//Prints off if FileNotFoundException is true.					
 							System.err.println(" Couldn't move to directory.");
-						}		
+				
+						}			
+			}
 }
-
 	public static void main(String[] args) {
 		
 		//Creates an instance of Exercise4 called doit4
 		Exercise4 doit4 = new Exercise4();
 		//Calls the hEllo method on doit4
-		doit4.filename;
 		doit4.hEllo();
 		//Calls the prompt method on doit4
 		doit4.prompt();
 		//Calls the scanNprint method on doit4
 		doit4.scanNprint();
 		//Calls the copyNow method on doit4
-		doit4.copyNow();
+		
 	}
 	}
+
