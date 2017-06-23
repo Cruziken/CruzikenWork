@@ -1,6 +1,6 @@
 public class Copiers implements Interfacer  {
 	
-		public void Copyit() {
+		public void copyIt() {
 			
 			
 			//Creates a variable of file2 to use as the file that will be copied
