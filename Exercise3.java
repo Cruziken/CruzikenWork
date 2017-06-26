@@ -26,12 +26,16 @@ public class Exercise3 {
 					//Prints off the contents within the file
 					System.out.println(num);
 				}
+				//Close input
+				input.close();
 			}
 			//Alerts the compiler of what to do in case of the exception.
 			catch(FileNotFoundException e){
 			//Prints off if FileNotFoundException is true.
 			System.err.format("File does not exist\n");
 		}
+		//Closes scanner
+		scanner.close();
 	}
 
 public static void main(String[] args){
