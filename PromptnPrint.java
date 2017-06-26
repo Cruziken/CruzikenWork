@@ -24,16 +24,18 @@ public class PromptnPrint implements Interfacer {
 		try {	
 			//Creates an instance of Scanner named input.
 		Scanner input = new Scanner(file);
-					while (input.hasNext()) {
+			//While the file has lines to read keep the loop going
+			while (input.hasNext()) {
 				//Creates a string out of Text found within file.
 				String num = input.nextLine();
 				//Prints num string from past line
 				System.out.print(num);
 			}
+					//Close the input
 					input.close();
 		}
 		//Alerts the compiler of what to do in case of the exception.
-	catch(FileNotFoundException e){
+		catch(FileNotFoundException e){
 		//Prints off if FileNotFoundException is true.
 		System.err.format("File does not exist\n");
 	}
