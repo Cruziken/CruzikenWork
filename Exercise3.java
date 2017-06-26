@@ -11,7 +11,7 @@ public class Exercise3 {
 		Scanner scanner = new Scanner(System.in);
 		//Prompts the user for a file name (absolute path).
 		System.out.print("Enter a file name: ");
-		//Stores variable filename as the user input requested.
+		//Stores variable filename as the user input.
 		String filename = scanner.nextLine();
 		//Changes the variable named filename into a File instance.
 		File file = new File(filename);
@@ -19,10 +19,11 @@ public class Exercise3 {
 			try {
 			//Creates an instance of Scanner named input.
 			Scanner input = new Scanner(file);
+				// Loop that goes until everything in file is read
 				while (input.hasNext()) {
 					//Creates a string out of Text found within file.
 					String num = input.nextLine();
-					//Prints num string from past line
+					//Prints off the contents within the file
 					System.out.println(num);
 				}
 			}
