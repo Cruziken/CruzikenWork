@@ -16,7 +16,8 @@ public class Exercise2 {
 		String s = scan.next();
 		//Gives the user necessary congratulations.
 		System.out.println("Nicely done!!!");
-				
+		//Closes the scanner
+		scan.close();
 	}
 	public static void main(String[] args) {
 		//Creates a new instance of Exercise2 called exce2
