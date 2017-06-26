@@ -34,7 +34,10 @@ public class Exercise4 {
 								//Prints num string from past line
 								System.out.print(num);
 							}
+							//Closes the input
+							input.close();
 						}
+						
 						//Alerts the compiler of what to do in case of the exception.
 						catch(FileNotFoundException e){
 						//Prints off if FileNotFoundException is true
@@ -52,30 +55,37 @@ public class Exercise4 {
 				//Creates a String named line
 				String line;
 			
-						//Exception is thrown to alert the compiler of what to do if it doesn't find the file.
-						try{
 							//If the filecopy is or isn't equal to its new file then the following code runs
-								if (filecopy.createNewFile() || !filecopy.createNewFile()){
-								//Creates a buffering character input string that reads the content in file2
-								reader = new BufferedReader(new FileReader(file2));
-								//Creates a printWriter that prints content of filecopy
-								writer = new PrintWriter(new FileWriter(filecopy));
-								//Copies over content from file2 to filecopy
+							try{
+								//Creates a variable success that is true. If a new file is created...
+								boolean success = filecopy.createNewFile();
+								//If a new file2 is created copy it over to filecopy and its repository
+								if (success) {
+									//Lets us know were we are at in the program
+									//Creates a buffering character input string that reads the content in file2
+									reader = new BufferedReader(new FileReader(file2));
+									//Creates a printWriter that prints content of filecopy
+									writer = new PrintWriter(new FileWriter(filecopy));
+									//Copies over content from file2 to filecopy
 									while ((line = reader.readLine()) != null){
+										//Closes the stream and releases any system resources associated with it
 										writer.println(line);
+									}
+									//Closers the BufferedReader
+									reader.close();
+									//Closes the PrintWriter
+									writer.close();
 								}
-								//Closes the stream and releases any system resources associated with it
-								reader.close();
-								//Closes the stream and releases any system resources associated with it
-								writer.close();
-					}
 					
 					}//Alerts the compiler of what to do in case of the exception.
 						catch(IOException ioEx) {
 							//Prints off if FileNotFoundException is true.					
 							System.err.println(" Couldn't move to directory.");
-				
-						}			
+							
+						}		
+							//Closes the scanner
+							scanner.close();
+					
 			}
 }
 	public static void main(String[] args) {
@@ -93,3 +103,5 @@ public class Exercise4 {
 	}
 	}
 
+				
+		
