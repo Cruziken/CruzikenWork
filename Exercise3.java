@@ -8,6 +8,7 @@ public class Exercise3 {
 	}
 	private void scanNprompt(){
 		//Creates an instance of Scanner named scanner.
+		//Whatever the user inputs gets scanned
 		Scanner scanner = new Scanner(System.in);
 		//Prompts the user for a file name (absolute path).
 		System.out.print("Enter a file name: ");
@@ -18,6 +19,7 @@ public class Exercise3 {
 		//Exception is thrown to alert the compiler of what to do if it doesn't find the file.
 			try {
 			//Creates an instance of Scanner named input.
+				//Scans the content of the file
 			Scanner input = new Scanner(file);
 				// Loop that goes until everything in file is read
 				while (input.hasNext()) {
