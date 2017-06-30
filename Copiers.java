@@ -37,12 +37,12 @@ public class Copiers implements Interfacer {
 				// Creates a buffering character input string that reads the
 				// content in file2
 				reader = new BufferedReader(new FileReader(file2));
-				// Creates a printWriter that prints content of filecopy
+				// Creates a printWriter that writes content to filecopy
 				writer = new PrintWriter(new FileWriter(filecopy));
 				// Loop copies over content from file2 to filecopy
 				// Loop runs as long as file has content
 				while ((line = reader.readLine()) != null) {
-					// Prints the content from file2 to filecopy
+					// Writes the content from file2 to filecopy
 					writer.println(line);
 				}
 				// Closers the BufferedReader
