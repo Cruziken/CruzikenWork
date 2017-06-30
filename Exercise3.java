@@ -41,13 +41,15 @@ public class Exercise3 {
 	}
 
 public static void main(String[] args){
-	//Creates an instance of Exercise3 called beGin
 	Exercise3 beGin = new Exercise3();
-	//Calls the deClare method on beGin
-	beGin.deClare();
-	//Calls the scanNprompt method on beGin
-	beGin.scanNprompt();
+		// Calls the deClare method on beGin
+		// This yells out Hello World!
+		beGin.deClare();
+		// Calls the scanNprompt method on beGin
+		// This takes the user input of a file name, scans the files contents,
+		// and prints to console
+		beGin.scanNprompt();
 
-}
+	}
 }
 
