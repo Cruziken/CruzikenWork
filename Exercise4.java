@@ -73,13 +73,13 @@ public class Exercise4 {
 				// Creates a buffering character input string that reads the
 				// content in file2
 				reader = new BufferedReader(new FileReader(file2));
-				// Creates a printWriter that prints content of filecopy
+				// Creates a printWriter that will write content to filecopy
 				writer = new PrintWriter(new FileWriter(filecopy));
 				// Copies over content from file2 to filecopy for as long as the
 				// file has content
 				while ((line = reader.readLine()) != null) {
-					// Closes the stream and releases any system resources
-					// associated with it
+					// Literally takes the content from file2 and writes it into
+					// filecopy
 					writer.println(line);
 				}
 				// Closers the BufferedReader
