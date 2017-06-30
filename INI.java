@@ -12,7 +12,7 @@ public class INI {
 		try {
 			// Creates an instance of properties called p
 			Properties p = new Properties();
-			// calls the load method on p to get keys and values the data from
+			// calls the load method on p to get keys and values data from
 			// TheRun.ini
 			p.load(new FileInputStream("C://Users//fz3//workspace//FizzBuzz//TheRun.ini"));
 			// Properties allows you to get access to the values of the keys
