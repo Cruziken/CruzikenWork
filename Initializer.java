@@ -11,7 +11,7 @@ public class Initializer {
 	// Method allows the passing of filenames from other classes
 	public Initializer(String filename) throws IOException {
 		// Creates (or gets access to ) a file from this absolute path
-		File file = new File("C://Users//fz3//workspace//Files//Cruzikana.log");
+		File file = new File(filename);
 		// Creates a new FileWriter for that file.
 		// Without the true you write over it. With it, you append
 		fileWriter = new FileWriter(file, true);
