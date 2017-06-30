@@ -53,6 +53,7 @@ public class Logic {
 			}
 
 		}
+		//Closes the FileWriter
 		writer.closeIt();
 	}
 }
