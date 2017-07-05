@@ -44,10 +44,11 @@ public class INIfile {
 			String keys = (String) enuKeys.nextElement();
 			// Gets the respective values for the keys
 			String value = p.getProperty(keys);
-			// Sends these variables to class Logical to use
-			myLogic.retrieve(keys, value);
+			//Get an array of keys and values
 			// Writes the keys and values to the other file and the console
 			writeif.writeFile(keys + "=" + value);
+			writeif.saveVar(value);
+			}
 		}
 		// Closes the writer
 		writeif.closeIt();
