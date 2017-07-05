@@ -1,83 +1,55 @@
 package Fizzbuzz;
 
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Enumeration;
 
+/**
+ * 
+ * This class holds the methods that read a properties file and has its contents
+ * written to the console and another file
+ *
+ */
 public class INIfile {
-
+	/**
+	 * This method reads the INI file with a modified Properties class that
+	 * writes the content of the file to another file and to the console in the
+	 * natural order
+	 */
 	public void readIt() {
+		// Creates an instance of Writer to access those methods and pass the
+		// desired file name
 		Writer writeif = new Writer("C://Users//Public//Valerie.log");
+		// Creates an instance of Logical that accesses the methods within class
+		// Logical that allows the passage of local variables from this class
 		Logical myLogic = new Logical();
-		// We are trying to scan from file a to file b (file a may not exist)
-		// try {
-		// Creates an instance of properties called p
-
+		// Creates an instance of SortProperties called p
 		SortProperty p = new SortProperty();
+		// We are trying to scan from file a to file b (file a may not exist)
 		try {
+			// Loads the keys and values from the character stream from the file
 			p.load(new FileInputStream("C://Users//fz3//workspace//FizzBuzz//TheRun.ini"));
-		} catch (IOException e) {
+		}
+		// Catches the exception in case the file does not exist
+		catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Enumeration enuKeys = p.keys();
-
+		// Object that generates a series of elements from the file in the
+		// natural order from the file
+		Enumeration<Object> enuKeys = p.keys();
+		// As long as there are enumeration objects
 		while (enuKeys.hasMoreElements()) {
+			// Gets the keys from the enumeration
 			String keys = (String) enuKeys.nextElement();
+			// Gets the respective values for the keys
 			String value = p.getProperty(keys);
+			// Sends these variables to class Logical to use
 			myLogic.retrieve(keys, value);
-			writeif.writeFile(keys + "=" + value); // Prints off each value to
-													// desired
+			// Writes the keys and values to the other file and the console
+			writeif.writeFile(keys + "=" + value);
 		}
+		// Closes the writer
 		writeif.closeIt();
-
-		// Creates an instance of properties called p
-
-		/*
-		 * TreeMap<String,String> tmap = new TreeMap<String, String>();
-		 * tmap.putAll((Map<? extends String, ? extends String>) new
-		 * FileInputStream("C://Users//fz3//workspace//FizzBuzz//TheRun.ini" ));
-		 * Set set = tmap.entrySet(); Iterator iterator = set.iterator(); while
-		 * (iterator.hasNext()); String mentry = (String)iterator.next();
-		 * writeif.writeFile(mentry);
-		 */
-
-		// calls the load method on p to get keys and values data from
-		// TheRun.ini
-		/*
-		 * Properties p = new Properties(); p.load(new
-		 * FileInputStream("C://Users//fz3//workspace//FizzBuzz//TheRun.ini"));
-		 * Enumeration enuKeys = p.keys();
-		 * 
-		 * while (enuKeys.hasMoreElements()) { String key =
-		 * (String)enuKeys.nextElement(); String value = p.getProperty(key);
-		 * writeif.writeFile(key + "=" + value); // Prints off each value to
-		 * desired file }
-		 */
-		/*
-		 * try { this.prop = new Properties(); prop.load(new
-		 * FileInputStream("C://Users//fz3//workspace//FizzBuzz//TheRun.ini"));
-		 * } catch (FileNotFoundException e) { e.printStackTrace(); } catch
-		 * (IOException e) { e.printStackTrace(); } }
-		 * 
-		 * public Set<Object> getAllKeys(){ Set<Object> keys = prop.keySet();
-		 * return keys; }
-		 * 
-		 * public String getPropertyValue(String key){ return
-		 * this.prop.getProperty(key); }
-		 * 
-		 * public void readIt(){ Writer writeif = new
-		 * Writer("C://Users//Public//Valerie.log"); INIfile mpc = new
-		 * INIfile(); Set<Object> keys = mpc.getAllKeys(); for(Object k:keys){
-		 * String key = (String)k; String values = mpc.getPropertyValue(key);
-		 * writeif.writeFile(key+ "="+values); } writeif.closeIt(); }
-		 */
-		// Closes the file writer
-
-		/*
-		 * // close the try catch (IOException e) { // If exception holds true
-		 * prints off File does not exist e.printStackTrace(); }
-		 */
 	}
 }
