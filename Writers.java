@@ -23,7 +23,7 @@ public class Writers {
 	 * 
 	 * @param filename
 	 */
-	public Writer(String filename) {
+	public Writers(String filename) {
 		// Creates (or gets access to ) a file from this absolute path
 		File file = new File(filename);
 		// Creates a new FileWriter for that file.
