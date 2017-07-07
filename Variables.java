@@ -23,7 +23,7 @@ public class Variables {
 		}
 
 	public void setVar() {
-		Logical myLogical = new Logical();
+		Logicals myLogical = new Logicals();
 		setLogic(values);
 		this.values.list(System.out);
 		LinkedHashMap<String, String> mymap = new LinkedHashMap<String, String>();
