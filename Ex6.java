@@ -1,27 +1,31 @@
 package Fizzbuzz;
 
-public class Ex6 {
-	public void start() throws Exception {
+/**
+ * 
+ * This class contains the main method that starts the program. 
+ *
+ */
+public class EX6 {
+	/**
+	 * Method provides the steps to take throughout the program
+	 */
+	public static void start() {
 		// Creates an instance of INI called phase1
-		INI myINI = new INI();
+		INIfileLoader myINI = new INIfileLoader();
 		// Calls the readIt method on phase1
-		// This will read the text in the INI file and write to log file
+		// This will read the text in the INI file and sends the information to
+		// other methods that copy the content to another file and the console, as well as sending the content to the Variables
+		// class to access some of the keys to set equal to variables in order to solve the FizzBuzz problem
 		myINI.readIt();
-		// Creates an instance of Logic called phase2
-		Logic myLogic = new Logic();
-		// Calls the test method on phase2
-		// Executes fizz buzz solution and prints to console and appends to log
-		// file
-		myLogic.test();
 
 	}
 
-	public static void main(String[] args) throws Exception {
-		// Creates an instance of Excersice6 called catalyst
-		Ex6 myEx6 = new Excersice6();
-		// Calls the start method on catalyst
+	/**
+	 * Method starts the program
+	 */
+	public static void main(String[] args) {
 		// This Starts the program
-		myEx6.start();
+		start();
 	}
 
 }
