@@ -4,135 +4,124 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.io.StringWriter;
 import java.util.Properties;
-import java.util.Set;
 
 /**
- * This class reads content from other files and writes it in desired file in
+ * This class gets content from other files and writes it in desired file in
  * addition to printing the content to the console
  *
  */
 public class Writer {
-	// Creates an instance of fileWriter so we can mess with it
+	// Creates an a FileWriter variable named fileWriter
 	private FileWriter fileWriter;
+	// Creates an a BufferedWriter variable named buffWriter
 	private BufferedWriter buffWriter;
-	
-	
+	// Creates an a Properties variable named props
+	private Properties props;
+
 	/**
-	 * Method allows the passing of filenames from other classes
+	 * Method allows the passing of filenames from other classes. Creates a new
+	 * File and also creates new instances of fileWriter and buffWriter
 	 * 
 	 * @param filename
 	 */
 	public Writer(String filename) {
 		// Creates (or gets access to ) a file from this absolute path
 		File file = new File(filename);
-		// Creates a new FileWriter for that file.
-		// Without the true you write over it. With it, you append
+		// In case there is no file to write to...
 		try {
+			// Creates a new FileWriter for that file.
+			// Without the true you write over it. With it, you append
 			fileWriter = new FileWriter(file, true);
+			// Creates an instance buffWriter that writes the content from the
+			// fileWriter
 			buffWriter = new BufferedWriter(fileWriter);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		}
+		// ...do this.
+		catch (IOException e) {
+			// TODO Auto-generated catch block; Throws NullPointerException
 			e.printStackTrace();
 		}
 	}
 
 	/**
 	 * Method allows content to be passed into it when accessed by other classes
+	 * and methods. This content is then written out to a file and also the
+	 * console
 	 * 
 	 * @param content
 	 */
 	public void writeFile(String content) {
-		// Filewriter writes content to file passed from other classes
+
+		// In case no content is there to be read...
 		try {
+			// buffWriter writes content to file passed from other classes
 			buffWriter.write(content);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		// Adds a new line to the file for each variable it takes
-		try {
-			buffWriter.write(content);
+			// Each time new content is passed, give it a new line
 			buffWriter.newLine();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		}
+		// ...do this.
+		catch (IOException e) {
+			// TODO Auto-generated catch block; Throws NullPointerException
 			e.printStackTrace();
 		}
-		// Prints out the content that other classes pass through the message
+		// Prints out the content that other classes pass to this method to the
+		// console
 		System.out.println(content);
 	}
 
-		/*
-		 * ArrayList<String[]> data = new ArrayList<String[]>(); data.add(vars);
-		 * 
-		 * for (String[] arrayValu : data) {
-		 * 
-		 * String max_int = arrayValu[0]; String lower_divisor = arrayValu[0];
-		 * String upper_divisor = arrayValu[0]; String lower_divisor_label =
-		 * arrayValu[0]; String upper_divisor_label = arrayValu[0];
-		 * 
-		 * }
-		 */
-
-	
-
 	/**
-	 * Method closes any implementation of the fileWriter
+	 * Method closes any implementation of the buffWriter
 	 */
 	public void closeIt() {
-		// Closes the fileWriter
+		// Closes the buffWriter if there is something to close.
 		try {
-			fileWriter.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			buffWriter.close();
+		}
+		// If there is nothing to close...
+		catch (IOException e) {
+			// TODO Auto-generated catch block; Throws NullPointerException
 			e.printStackTrace();
 		}
 
 	}
 
-	//@SuppressWarnings({ "unchecked", "rawtypes", "unused" })
+	/**
+	 * This method takes the keys and values of the properties f, converts them
+	 * to strings and has them passed to the writeFile method
+	 */
 	public void transfer() {
-		Writer myWriter = new Writer("C://Users//Public//Valerie.log");
-		INIfile myINI = new INIfile();
-		myINI.readIt();
-		myWriter.setProperties(myINI.getProperties());
-		
-		/*// Object that stores values that can't be equal to each other
-		LinkedHashMap map = new LinkedHashMap();
-				// As long as there are enumeration objects
-				for (final String key: property.stringPropertyNames())
-					
-				map.put(key, property.getProperty(key));
-				
-				Set set = map.entrySet();
-				
-				Iterator i = set.iterator();
-				
-				while(i.hasNext()){
-					Map.Entry me = (Map.Entry)i.next();
-					writeFile((String) me.getKey());
-				}
-					*/
-				} 
-	
-		
-	
-
-	private void setProperties(Properties properties) {
-		{myProps= properties;}
-		
+		// Creates an instance of StringWriter that is a character stream that
+		// collects its output in a string buffer
+		StringWriter writer = new StringWriter();
+		// In case there is no content in the property file...
+		try {
+			// Writes the keys and values to the StringWriter
+			this.props.store(writer, "");
+		}
+		// ...Do this
+		catch (IOException e) {
+			// TODO Auto-generated catch block; Throws NullPointerException
+			e.printStackTrace();
+		}
+		// Takes the StringWriter, returns a string buffer, then finally returns
+		// a String named INIcontent
+		String INIcontent = writer.getBuffer().toString();
+		// Passes the content from the INIfile to the writeFile method
+		writeFile(INIcontent);
 	}
 
-
-
-
-	{
-		// TODO Auto-generated method stub
-		
+	/**
+	 * This method accepts the property keys and values from other methods in
+	 * other classes
+	 * 
+	 * @param properties
+	 */
+	public void setProperties(Properties properties) {
+		{
+			// Sets the properties passed through equal to props
+			this.props = properties;
+		}
 	}
-		
-	}
-
+}
