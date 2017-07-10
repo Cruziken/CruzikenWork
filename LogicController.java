@@ -26,7 +26,7 @@ public class LogicController {
 
 		// Run the loop starting at zero, ending less than max_int, and
 		// incrementing by one in subsequent run through
-		for (int x = 0; x < max_int; x++) {
+		for (int x = 1; x <= max_int; x++) {
 
 			// If x is divisible by 3 and is by 5 print "fizzbuzz"
 			if ((x % (lower_divisor * upper_divisor) == 0)) {
