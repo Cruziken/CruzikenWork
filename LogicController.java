@@ -4,7 +4,6 @@ package Fizzbuzz;
  * This class controls the logic for FizzBuzz and sends the output to the
  * console and to a file
  * 
- * @author fz3
  *
  */
 public class LogicController {
