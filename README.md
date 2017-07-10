@@ -40,4 +40,4 @@ If it is divisible by both lower_divisor and upper_divisor, print lower_divisor_
 
 Step 3: In addition to printing the output, store it in a log file named log_.text
 
-Associated files: Excersice6.java, Logic.java, INI.java, and Initializer.java
+Associated files: Ex6.java, LogicController.java, INIfileLoader.java, Writer.java and SetVariables.java
