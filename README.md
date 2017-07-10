@@ -27,11 +27,11 @@ Associated files: Excersise5.java, PromptnPrint.java, Screamers.java, Copiers.ja
 Exercise 6 (FizzBuzz with OO concepts)
 
 Step 1: Read off an INI file with the following format 
-  #max_int = //In this case key = 100 
-  #lower_divisor = //In this case key = 3 
-  #upper_divisor = //In this case key = 5 
-  #lower_divisor_label = //In this case key = fizz 
-  #upper_divisor_label = // In this case key = buzz
+   max_int = //In this case key = 100 
+   lower_divisor = //In this case key = 3 
+   upper_divisor = //In this case key = 5 
+   lower_divisor_label = //In this case key = fizz 
+   upper_divisor_label = // In this case key = buzz
 
 Step 2: Print the integers 1-max_int.  
 If the integer is divisible by lower_divisor, print lower_divisor_label instead of the integer. 
