@@ -1,7 +1,4 @@
-<head>
-<style>
-</style>
-</head>
+
 
 <body>
 <h1>Exercises</h>
