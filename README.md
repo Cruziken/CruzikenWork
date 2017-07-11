@@ -30,11 +30,11 @@ Associated files: <a href = "https://github.com/Cruziken/CruzikenWork/blob/maste
 <h3>Step 1:</h3>
 <p>Read off an INI file with the following format: </p>
 <ul>
-  <li> max_int = In this case key = 100 </li>
-  <li>lower_divisor = In this case key = 3 </li>
-  <li>upper_divisor = In this case key = 5 </li>
-  <li>lower_divisor_label = In this case key = fizz </li>
-  <li>upper_divisor_label = In this case key = buzz </li>
+  <li> max_int (In this case key value is) = 100 </li>
+  <li>lower_divisor (In this case key value is) = 3 </li>
+  <li>upper_divisor (In this case key value is) = 5 </li>
+  <li>lower_divisor_label (In this case key value is) = fizz </li>
+  <li>upper_divisor_label (In this case key value is) = buzz </li>
 </ul>
 <h3>Step 2:</h3>
 Print the integers 1-max_int, <em>unless</em>...<br />
