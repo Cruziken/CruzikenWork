@@ -28,7 +28,7 @@ public class SetVariables {
 	 * 
 	 * @param propy
 	 */
-	public void setLogic(Properties propy) {
+	public void setProps(Properties propy) {
 		// Sets the properties passed through equal to values
 		this.values = propy;
 	}
