@@ -46,4 +46,4 @@ Print the integers 1-max_int, unless...<br />
 <h3>Step 3:</h3>
 <p>In addition to printing the output, store it in a log file named log_.text</p>
 
-<p>Associated files: Ex6.java, LogicController.java, INIfileLoader.java, Writer.java and SetVariables.java</p>
+<p>Associated files: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Ex6.java"> Ex6.java</a>,<a href = "https://github.com/Cruziken/CruzikenWork/blob/master/LogicController.java"> LogicController.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/INIfileLoader.java"> INIfileLoader.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Writer.java"> Writer.java</a> and <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/SetVariables.java"> SetVariables.java</a></p>
