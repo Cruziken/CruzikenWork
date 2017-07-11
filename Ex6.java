@@ -7,15 +7,15 @@ package Fizzbuzz;
  */
 public class EX6 {
 	/**
-	 * Method provides the steps to take throughout the program
+	 * Method calls the step to take to begin the program
 	 */
 	public static void start() {
-		// Creates an instance of INI called phase1
+		// Creates an instance of INI called myINI
 		INIfileLoader myINI = new INIfileLoader();
-		// Calls the readIt method on phase1
+		// Calls the readIt method on myINI
 		// This will read the text in the INI file and sends the information to
 		// other methods that copy the content to another file and the console, as well as sending the content to the Variables
-		// class to access some of the keys to set equal to variables in order to solve the FizzBuzz problem
+		// class to access some of the keys' values to set equal to variables in order to solve the FizzBuzz problem
 		myINI.readIt();
 
 	}
