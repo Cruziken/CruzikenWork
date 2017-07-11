@@ -33,7 +33,8 @@ public class INIfileLoader {
 		try {
 			// Loads the keys and values from the character stream from the file
 			myProps.load(new FileInputStream("C://Users//fz3//workspace//FizzBuzz//TheRun.ini"));
-			// Passes the keys and values of myProps to the setProperti method.
+			// Passes the keys and values of myProps to the setProperties
+			// method.
 			// This methods passes the content to the Writer class.
 			myWriter.setProperties(myProps);
 			// Passes the keys and values of myProps to the setProperti method.
@@ -54,7 +55,7 @@ public class INIfileLoader {
 		// to variables and passes these variable values to the LogicController
 		// Class
 		myVariables.setVars();
-		// Calls the method that closes the FileWriter and BufferedReader
+		// Calls the method that closes the BufferedReader
 		myWriter.closeIt();
 	}
 }
