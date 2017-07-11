@@ -1,30 +1,31 @@
-Exercise 1
+<h1>Excersices</h>
+<h2>Exercise 1</h2>
 
 Print "Hello World!" 
 Associated file: Excercise1.java
 
-Exercise 2
+<h3>Exercise 2</h3>
 
 Print "Hello World!" and get user input from Command Line. 
 Associated file: Exercise2.java
 
-Exercise 3
+<h4>Exercise 3</h4>
 
 Print "Hello World!", get user input of filename, read the file, and print the contents. 
 Associated file: Exercise3.java
 
-Exercise 4
+<h5>Exercise 4</h5>
 
 Print "Hello World!", get user input of filename, read the file, print the content, and copy the contents to another file.
 Associated file: Exercise4.java
 
-Exercise 5
+<h6>Exercise 5</h6>
 
 Basically Exercise 4 but with classes (introduces OO concepts). 
 Associated files: Excersise5.java, PromptnPrint.java, Screamers.java, Copiers.java, Interfacer.java
 
 
-Exercise 6 (FizzBuzz with OO concepts)
+<h7>Exercise 6 (FizzBuzz with OO concepts)</h7>
 
 Step 1: 
 <p>Read off an INI file with the following format </p>
