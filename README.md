@@ -37,7 +37,7 @@ Associated files: <a href = "https://github.com/Cruziken/CruzikenWork/blob/maste
   <li>upper_divisor_label = In this case key = buzz </li>
 </ul>
 <h3>Step 2:</h3>
-Print the integers 1-max_int, unless...<br />
+Print the integers 1-max_int, <em>unless</em>...<br />
 <ul>
 <li>If the integer is divisible by lower_divisor, print lower_divisor_label instead of the integer.</li>
 <li>If the integer is divisible by upper_divisor, print upper_divisor_label instead.</li>
