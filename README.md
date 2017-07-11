@@ -42,7 +42,7 @@ Print the integers 1-max_int, unless...<br />
 <li>If the integer is divisible by lower_divisor, print lower_divisor_label instead of the integer.</li>
 <li>If the integer is divisible by upper_divisor, print upper_divisor_label instead.</li>
 <li>If it is divisible by both lower_divisor and upper_divisor, print lower_divisor_label+upper_divisor_label.</li>
-
+</ul>
 <h3>Step 3:</h3>
 <p>In addition to printing the output, store it in a log file named log_.text</p>
 
