@@ -1,7 +1,11 @@
+<head>
+<style>
+</style>
+</head>
 
+<body>
 <h1>Exercises</h>
 <h2>Exercise 1</h2>
-
 Print "Hello World!" <br />
 Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Excercise1.java"> Excercise1.java </a>
 
@@ -48,4 +52,4 @@ Print the integers 1-max_int, <em>unless</em>...<br />
 <p>In addition to printing the output, store it in a log file named log_.text</p>
 
 <p>Associated files: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Ex6.java"> Ex6.java</a>,<a href = "https://github.com/Cruziken/CruzikenWork/blob/master/LogicController.java"> LogicController.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/INIfileLoader.java"> INIfileLoader.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Writer.java"> Writer.java</a> and <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/SetVariables.java"> SetVariables.java</a></p>
-
+</body>
