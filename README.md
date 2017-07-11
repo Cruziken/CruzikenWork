@@ -26,7 +26,8 @@ Associated files: Excersise5.java, PromptnPrint.java, Screamers.java, Copiers.ja
 
 Exercise 6 (FizzBuzz with OO concepts)
 
-Step 1: Read off an INI file with the following format 
+Step 1: 
+<p>Read off an INI file with the following format </p>
 <ul>
   <li> max_int = In this case key = 100 </li>
   <li>lower_divisor = In this case key = 3 </li>
@@ -34,11 +35,14 @@ Step 1: Read off an INI file with the following format
   <li>lower_divisor_label = In this case key = fizz </li>
   <li>upper_divisor_label = In this case key = buzz </li>
 </ul>
-Step 2: Print the integers 1-max_int.  
-If the integer is divisible by lower_divisor, print lower_divisor_label instead of the integer. 
-If the integer is divisible by upper_divisor, print upper_divisor_label instead. 
-If it is divisible by both lower_divisor and upper_divisor, print lower_divisor_label+upper_divisor_label.
+Step 2: <br />
+Print the integers 1-max_int, unless...<br />
+<ul>
+<li>If the integer is divisible by lower_divisor, print lower_divisor_label instead of the integer.</li>
+<li>If the integer is divisible by upper_divisor, print upper_divisor_label instead.</li>
+<li>If it is divisible by both lower_divisor and upper_divisor, print lower_divisor_label+upper_divisor_label.</li>
 
-Step 3: In addition to printing the output, store it in a log file named log_.text
+Step 3: 
+<p>In addition to printing the output, store it in a log file named log_.text</p>
 
-Associated files: Ex6.java, LogicController.java, INIfileLoader.java, Writer.java and SetVariables.java
+<p>Associated files: Ex6.java, LogicController.java, INIfileLoader.java, Writer.java and SetVariables.java</p>
