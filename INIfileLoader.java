@@ -39,7 +39,7 @@ public class INIfileLoader {
 			myWriter.setProperties(myProps);
 			// Passes the keys and values of myProps to the setProperti method.
 			// This methods passes the content to the Variables class.
-			myVariables.setLogic(myProps);
+			myVariables.setProps(myProps);
 		}
 		// Catches the exception in case the file does not exist
 		catch (IOException e) {
