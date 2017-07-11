@@ -1,4 +1,4 @@
-<h1>Excersices</h>
+<h1>Exercises</h>
 <h2>Exercise 1</h2>
 
 Print "Hello World!" <br />
