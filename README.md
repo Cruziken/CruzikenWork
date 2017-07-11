@@ -6,22 +6,22 @@ Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master
 
 <h2>Exercise 2</h2>
 
-Print "Hello World!" and get user input from Command Line. 
+Print "Hello World!" and get user input from Command Line. <br />
 Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Exercise2.java"> Exercise2.java </a>
 
 <h2>Exercise 3</h2>
 
-Print "Hello World!", get user input of filename, read the file, and print the contents. 
+Print "Hello World!", get user input of filename, read the file, and print the contents. <br />
 Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Exercise3.java"> Exercise3.java </a>
 
 <h2>Exercise 4</h2>
 
-Print "Hello World!", get user input of filename, read the file, print the content, and copy the contents to another file.
+Print "Hello World!", get user input of filename, read the file, print the content, and copy the contents to another file. <br />
 Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Exercise4.java"> Exercise4.java </a>
 
 <h2>Exercise 5</h2>
 
-Basically Exercise 4 but with classes (introduces OO concepts). 
+Basically Exercise 4 but with classes (introduces OO concepts). <br />
 Associated files: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Excersise5.java">Excersise5.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/PromptnPrint.java">PromptnPrint.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Screamers.java">Screamers.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Copiers.java">Copiers.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Interfacer.java"> Interfacer.java</a>
 
 
