@@ -1,28 +1,28 @@
 <h1>Excersices</h>
 <h2>Exercise 1</h2>
 
-Print "Hello World!" 
-Associated file: Excercise1.java
+Print "Hello World!" <br />
+Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Excercise1.java"> Excercise1.java </a>
 
 <h2>Exercise 2</h2>
 
 Print "Hello World!" and get user input from Command Line. 
-Associated file: Exercise2.java
+Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Exercise2.java"> Exercise2.java </a>
 
 <h2>Exercise 3</h2>
 
 Print "Hello World!", get user input of filename, read the file, and print the contents. 
-Associated file: Exercise3.java
+Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Exercise3.java"> Exercise3.java </a>
 
 <h2>Exercise 4</h2>
 
 Print "Hello World!", get user input of filename, read the file, print the content, and copy the contents to another file.
-Associated file: Exercise4.java
+Associated file: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Exercise4.java"> Exercise4.java </a>
 
 <h2>Exercise 5</h2>
 
 Basically Exercise 4 but with classes (introduces OO concepts). 
-Associated files: Excersise5.java, PromptnPrint.java, Screamers.java, Copiers.java, Interfacer.java
+Associated files: <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Excersise5.java">Excersise5.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/PromptnPrint.java">PromptnPrint.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Screamers.java">Screamers.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Copiers.java">Copiers.java</a>, <a href = "https://github.com/Cruziken/CruzikenWork/blob/master/Interfacer.java"> Interfacer.java</a>
 
 
 <h2>Exercise 6 (FizzBuzz with OO concepts)</h2>
