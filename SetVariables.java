@@ -19,8 +19,8 @@ public class SetVariables {
 	private String lower_divisor_label;
 	// Creates a String integer called upper_divisor_label
 	private String upper_divisor_label;
-	// Creates a properties variable called values
-	private Properties values;
+	// Creates a properties variable called props
+	private Properties props;
 
 	/**
 	 * This method accepts the property keys and values from other methods in
@@ -29,8 +29,8 @@ public class SetVariables {
 	 * @param propy
 	 */
 	public void setProps(Properties propy) {
-		// Sets the properties passed through equal to values
-		this.values = propy;
+		// Sets the properties passed through equal to props
+		this.props = propy;
 	}
 
 	/**
@@ -45,9 +45,9 @@ public class SetVariables {
 		LinkedHashMap<String, String> mymap = new LinkedHashMap<String, String>();
 		// For as long as there are keys to convert to string in the file, call
 		// them key)
-		for (String key : this.values.stringPropertyNames()) {
+		for (String key : this.props.stringPropertyNames()) {
 			// For each key converted, get its key
-			String value = this.values.getProperty(key);
+			String value = this.props.getProperty(key);
 			// Puts the keys and values into the LinkedHashMap
 			mymap.put(key, value);
 		}
