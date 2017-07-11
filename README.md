@@ -28,7 +28,7 @@ Associated files: <a href = "https://github.com/Cruziken/CruzikenWork/blob/maste
 <h2>Exercise 6 (FizzBuzz with OO concepts)</h2>
 
 <h3>Step 1:</h3>
-<p>Read off an INI file with the following format </p>
+<p>Read off an INI file with the following format: </p>
 <ul>
   <li> max_int = In this case key = 100 </li>
   <li>lower_divisor = In this case key = 3 </li>
