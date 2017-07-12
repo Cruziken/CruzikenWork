@@ -6,7 +6,6 @@ package Fizzbuzz;
  *
  */
 public class GenericFizzBuzz {
-	public class GenericFizzBuzz {
 	/**
 	 * Method begins the program
 	 */
