@@ -7,18 +7,46 @@ package Fizzbuzz;
  *
  */
 public class LogicController {
+	private Variables variables;
+	private int max_int;
+	private int lower_divisor;
+	private int upper_divisor;
+	private String lower_divisor_label;
+	private String upper_divisor_label;
+
+	/**
+	 * Method that gets the variable name values from the Variables class in
+	 * order to run the FizzBuzz problem
+	 * 
+	 */
+	public void setVariables(Variables variables) {
+		// Assigns the Variables instance passed through equal to this
+		// particular instance of variables
+		this.variables = variables;
+		// Assigns max_int equal to the what is was assigned in Variables; In
+		// this case 100
+		max_int = variables.getMax_Int();
+		// Assigns lower_divisor equal to what it was assigned in Variables; In
+		// this case 3
+		lower_divisor = variables.getLower_Divisor();
+		// Assigns upper_divisor equal to what it was assigned in Variables; In
+		// this case 5
+		upper_divisor = variables.getUpper_Divisor();
+		// Assigns lower_divisor_label equal to what it was assigned in
+		// Variables; In this case fizz
+		lower_divisor_label = variables.getLower_Divisor_Label();
+		// Assigns upper_divisor equal to what it was assigned in Variables; In
+		// this case buzz
+		upper_divisor_label = variables.getUpper_Divisor_Label();
+
+	}
+
 	/**
 	 * Method that runs the logic necessary to solve the FizzBuzz Problem and
 	 * passes the content through the Writer class's writeFile method
 	 * 
-	 * @param max_int
-	 * @param lower_divisor
-	 * @param upper_divisor
-	 * @param lower_divisor_label
-	 * @param upper_divisor_label
 	 */
-	public void test(int max_int, int lower_divisor, int upper_divisor, String lower_divisor_label,
-			String upper_divisor_label) {
+	public void run() {
 		// Creates an instance of Writer to access those methods and pass the
 		// desired file name
 		Writer myWriter = new Writer("C://Users//Public//Valerie.log");
@@ -30,25 +58,25 @@ public class LogicController {
 			// If x is divisible by 3 and is by 5 print "fizzbuzz"
 			if ((x % (lower_divisor * upper_divisor) == 0)) {
 				// Prints off fizzbuzz to console
-				myWriter.writeFile(lower_divisor_label + upper_divisor_label);
+				myWriter.log(lower_divisor_label + upper_divisor_label);
 			}
 
 			// If x is divisible by 3 but not 5 do the following
 			else if (x % lower_divisor == 0) {
 				// Print out fizz
-				myWriter.writeFile(lower_divisor_label);
+				myWriter.log(lower_divisor_label);
 
 			}
 
 			// If x is not divisible by 3 but is by 5 print "buzz"
 			else if (x % upper_divisor == 0) {
 				// Prints off buzz to console
-				myWriter.writeFile(upper_divisor_label);
+				myWriter.log(upper_divisor_label);
 			}
 			// If the other conditions aren't met print the number
 			else {
 				// Prints value of x onto console
-				myWriter.writeFile(String.valueOf(x));
+				myWriter.log(String.valueOf(x));
 			}
 
 		}
@@ -57,4 +85,5 @@ public class LogicController {
 		myWriter.closeIt();
 
 	}
+
 }
