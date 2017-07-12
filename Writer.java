@@ -13,12 +13,13 @@ import java.util.Properties;
  *
  */
 public class Writer {
-	// Creates an a FileWriter variable named fileWriter
+	// Creates a FileWriter variable named fileWriter
 	private FileWriter fileWriter;
-	// Creates an a BufferedWriter variable named buffWriter
+	// Creates a BufferedWriter variable named buffWriter
 	private BufferedWriter buffWriter;
-	// Creates an a Properties variable named props
+	// Creates a Properties variable named props
 	private Properties props;
+	//Creates Variables instance named variables
 	private Variables variables;
 
 	/**
