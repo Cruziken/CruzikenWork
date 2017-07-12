@@ -1,5 +1,7 @@
 package Fizzbuzz;
 
+import java.util.Properties;
+
 /**
  * This class controls the logic for FizzBuzz and sends the output to the
  * console and to a file
@@ -7,12 +9,18 @@ package Fizzbuzz;
  *
  */
 public class LogicController {
-	private Variables variables;
+	// Creates an integer called max_int
 	private int max_int;
+	// Creates a integer called lower_divisor
 	private int lower_divisor;
+	// Creates a integer called upper_divisor
 	private int upper_divisor;
+	// Creates a String called lower_divisor_label
 	private String lower_divisor_label;
+	// Creates a String integer called upper_divisor_label
 	private String upper_divisor_label;
+	// Creates a Variables instance called variables
+	private Variables variables;
 
 	/**
 	 * Method that gets the variable name values from the Variables class in
@@ -87,3 +95,4 @@ public class LogicController {
 	}
 
 }
+
