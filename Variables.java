@@ -8,7 +8,7 @@ import java.util.Properties;
  * the FizzBuzz problem
  *
  */
-public class SetVariables {
+public class Variables {
 	// Creates an integer called max_int
 	private int max_int;
 	// Creates a integer called lower_divisor
@@ -23,24 +23,17 @@ public class SetVariables {
 	private Properties props;
 
 	/**
-	 * This method accepts the property keys and values from other methods in
-	 * other classes
-	 * 
-	 * @param propy
-	 */
-	public void setProps(Properties propy) {
-		// Sets the properties passed through equal to props
-		this.props = propy;
-	}
-
-	/**
 	 * This method assigns values to the variables used in the LogicController
-	 * class,passes these variables to the Logic Controller, and calls the test
-	 * method within LogicController to start the FizzBuzz solution
+	 * class
+	 * 
+	 * @param properties
 	 */
-	public void setVars() {
+	public void getVars(Properties props) {
+		// Sets the props variable equal to whatever properties object is passed
+		// through
+		this.props = props;
 		// Creates an instance of LogicController to access those methods
-		LogicController myLogicController = new LogicController();
+		// LogicController myLogicController = new LogicController();
 		// Creates a LinkedHash map that will store the keys and values of propy
 		LinkedHashMap<String, String> mymap = new LinkedHashMap<String, String>();
 		// For as long as there are keys to convert to string in the file, call
@@ -63,15 +56,62 @@ public class SetVariables {
 		// Assigns upper_divisor_label the value of the key
 		// "upper_divisor_label"
 		upper_divisor_label = (mymap.get("upper_divisor_label"));
-		// Passes the variable values to the test method in LogicController and
-		// calls the method
-		myLogicController.test(max_int, lower_divisor, upper_divisor, lower_divisor_label, upper_divisor_label);
+
+	}
+
+	/**
+	 * Getter method for max_int
+	 * 
+	 * @return
+	 */
+	int getMax_Int() {
+
+		return max_int;
+	}
+
+	/**
+	 * Getter method for lower_divisor
+	 * 
+	 * @return
+	 */
+	int getLower_Divisor() {
+		return lower_divisor;
+	}
+
+	/**
+	 * Getter method for upper_divisor
+	 * 
+	 * @return
+	 */
+
+	int getUpper_Divisor() {
+		return upper_divisor;
+	}
+
+	/**
+	 * Getter method for lower_divisor_label
+	 * 
+	 * @return
+	 */
+
+	String getLower_Divisor_Label() {
+		return lower_divisor_label;
+	}
+
+	/**
+	 * Getter method for upper_divisor_label
+	 * 
+	 * @return
+	 */
+	String getUpper_Divisor_Label() {
+		return upper_divisor_label;
 	}
 
 	/**
 	 * Method that makes Integers out of numbers that are Strings
 	 * 
-	 * @param keys
+	 * @param assign
+	 * 
 	 * @return
 	 */
 	public int intIt(String assign) {
