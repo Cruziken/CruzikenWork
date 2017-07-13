@@ -129,11 +129,11 @@ public class Writer {
 	 * variable names.
 	 */
 	/**
-	 * This method takes the keys and values of the properties f, converts them
+	 * This method takes the keys and values of the properties props, converts them
 	 * to strings and has them passed to the writeFile method
 	 */
 	public void log(Properties props) {
-
+		//defines props as whatever Properties instance is passed through
 		this.props = props;
 		// Creates an instance of StringWriter that is a character stream that
 		// collects its output in a string buffer
