@@ -14,7 +14,7 @@ public class GenericFizzBuzz {
 		INIfileLoader myINI = new INIfileLoader();
 		// Creates an instance of Writer called myWriter that takes Valerie.log
 		// as a parameter
-		Writer myWriter = new Writer("C://Users//Public//Valerie.log");
+		Writer myWriter = new Writer("Valerie.log");
 		// Creates an instance of LogicController called myLogicController
 		LogicController myLogicController = new LogicController();
 		// Creates an instance of Variables called myVariables
