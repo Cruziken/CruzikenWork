@@ -29,20 +29,13 @@ public class Writer {
 	 * @param filename
 	 */
 	public Writer(String filename) {
-		//String path = "";
-		// boolean bool;
+		// Creates an instance of Absolute path
+		AbsolutePath myAbsPath = new AbsolutePath();
 		// Creates (or gets access to ) a file from this absolute path
-		 File file = new File(filename);
+		File file = new File(myAbsPath.getAbPath(filename));
+	
 		// In case there is no file to write to...
 		try {
-			 //bool = file.exists();
-			// if file exists
-			 //if (bool) {
-			// get absolute path
-			//path = file.getAbsolutePath();}
-
-			// File abfile = new File(path);
-			// In case there is no file to write to...
 			// Creates a new FileWriter for that file.
 			// Without the true you write over it. With it, you append
 			fileWriter = new FileWriter(file, true);
