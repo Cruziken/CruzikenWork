@@ -57,7 +57,7 @@ public class LogicController {
 	public void run() {
 		// Creates an instance of Writer to access those methods and pass the
 		// desired file name
-		Writer myWriter = new Writer("C://Users//Public//Valerie.log");
+		Writer myWriter = new Writer("Valerie.log");
 
 		// Run the loop starting at zero, ending less than max_int, and
 		// incrementing by one in subsequent run through
