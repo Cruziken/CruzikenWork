@@ -28,7 +28,7 @@ public class Variables {
 	 * 
 	 * @param properties
 	 */
-	public void getVars(Properties props) {
+	public void setVars(Properties props) {
 		// Sets the props variable equal to whatever properties object is passed
 		// through
 		this.props = props;
@@ -114,7 +114,7 @@ public class Variables {
 	 * 
 	 * @return
 	 */
-	public int intIt(String assign) {
+	private int intIt(String assign) {
 		// Returns back the value in integer form of a string
 		return Integer.valueOf(assign);
 	}
