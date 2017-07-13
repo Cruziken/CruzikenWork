@@ -29,7 +29,7 @@ public class GenericFizzBuzz {
 		// This gets the string values for the variables and sends them along
 		// with their associated variable names to the log(String content)
 		// method within Writer
-		myWriter.log(myVariables);
+		myWriter.log(myINI.readIt());
 		// Calls the setVariables method on myLogicController that takes this
 		// specific instance of Variables and gets the varible values nescessary
 		// in order to solve FizzBuzz
