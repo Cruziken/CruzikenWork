@@ -23,11 +23,6 @@ public class INIfileLoader {
 	 */
 
 	public Properties readIt() {
-		// Creates an instance of Writer to access those methods and pass the
-		// desired file name
-		// Writer myWriter = new Writer("C://Users//Public//Valerie.log");
-		// Creates an instance of Variables to access those methods
-		// Variables myVariables = new Variables();
 		// Creates an instance of Properties named myProps
 		myProps = new Properties();
 		//Creates an instance of myAbPath called myAbPath
