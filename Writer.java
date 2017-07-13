@@ -21,6 +21,7 @@ public class Writer {
 	private Properties props;
 	// Creates a Variables instance named variables
 	private Variables variables;
+	// private AbsolutePath myAbsPath;
 
 	/**
 	 * Method allows the passing of filenames from other classes. Creates a new
@@ -29,11 +30,12 @@ public class Writer {
 	 * @param filename
 	 */
 	public Writer(String filename) {
+
 		// Creates an instance of Absolute path
 		AbsolutePath myAbsPath = new AbsolutePath();
 		// Creates (or gets access to ) a file from this absolute path
-		File file = new File(myAbsPath.getAbPath(filename));
-	
+		File file = new File(myAbsPath.getAbsPath(filename));
+
 		// In case there is no file to write to...
 		try {
 			// Creates a new FileWriter for that file.
@@ -76,64 +78,13 @@ public class Writer {
 		// console
 		System.out.println(content);
 	}
-
+	
 	/**
-	 * Method closes any implementation of the buffWriter
-	 */
-	public void closeIt() {
-		// Closes the buffWriter if there is something to close.
-		try {
-			buffWriter.close();
-		}
-		// If there is nothing to close...
-		catch (IOException e) {
-			// TODO Auto-generated catch block; Throws NullPointerException
-			e.printStackTrace();
-		}
-
-	}
-
-	/**
-	 * This method takes this specific instance of variables that is passed
-	 * through, gets the values associated with the keys in the file, and passes
-	 * them through the log(String content) method in Writer
-	 */
-	/*
-	 * public void log(Variables variables) { // Sets the variables equal to
-	 * whatever instance of Variables is passed // through this.variables =
-	 * variables; // Gets the value associated with the key max_int int
-	 * max_int_key = variables.getMax_Int(); // Gets the value associated with
-	 * the key lower_divisor int lower_divisor_key =
-	 * variables.getLower_Divisor(); // Gets the value associated with the key
-	 * upper_divisor int upper_divisor_key = variables.getUpper_Divisor(); //
-	 * Gets the value associated with the key lower_divisor_label String
-	 * lower_divisor_label_key = variables.getLower_Divisor_Label(); // Gets the
-	 * value associated with the key upper_divisor_label String
-	 * upper_divisor_label_key = variables.getUpper_Divisor_Label(); // Prints
-	 * off "max_int = 100" to another file and the console log("max_int = " +
-	 * max_int_key); // Prints off "lower_divisor" = 3" to another file and the
-	 * console log("lower_divisor_key = " + lower_divisor_key); // Prints off
-	 * "upper_divisor" = 5" to another file and the console
-	 * log("upper_divisor_key = " + upper_divisor_key); // Prints off
-	 * "lower_divisor_label" = fizz" to another file and the // console
-	 * log("lower_divisor_key = " + lower_divisor_label_key); // Prints off
-	 * "upper_divisor_label" = buzz" to another file and the // console
-	 * log("upper_divisor_key = " + upper_divisor_label_key);
-	 * 
-	 * //Close the BufferedReader closeIt(); }
-	 */
-	/*
-	 * Alternative method that allows you in main to pass
-	 * myWriter.log(myINI.readIt()) instead of myVariables. This permits the
-	 * reading of the entire fire without having to explicitly string the
-	 * variable names.
-	 */
-	/**
-	 * This method takes the keys and values of the properties props, converts them
-	 * to strings and has them passed to the writeFile method
+	 * This method takes the keys and values of the properties props, converts
+	 * them to strings and has them passed to the writeFile method
 	 */
 	public void log(Properties props) {
-		//defines props as whatever Properties instance is passed through
+		// defines props as whatever Properties instance is passed through
 		this.props = props;
 		// Creates an instance of StringWriter that is a character stream that
 		// collects its output in a string buffer
@@ -153,8 +104,25 @@ public class Writer {
 		String INIcontent = writer.getBuffer().toString();
 		// Passes the content from the INIfile to the writeFile method
 		log(INIcontent);
-		//Closes the bufferedReader
+		// Closes the bufferedReader
 		closeIt();
+	}
+
+	/**
+	 * Method closes any implementation of the buffWriter
+	 */
+	public void closeIt() {
+		// Closes the buffWriter if there is something to close.
+		try {
+			buffWriter.close();
+			// fileWriter.close();
+		}
+		// If there is nothing to close...
+		catch (IOException e) {
+			// TODO Auto-generated catch block; Throws NullPointerException
+			e.printStackTrace();
+		}
+
 	}
 
 }
