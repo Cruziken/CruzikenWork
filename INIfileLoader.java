@@ -35,7 +35,6 @@ public class INIfileLoader {
 		// Attempting to scan from file a to file b (file a may not exist)
 		try {
 			// Loads the keys and values from the character stream from the file
-			//C://Users//fz3//workspace//FizzBuzz//TheRun.ini
 			myProps.load(new FileInputStream(myAbPath.getAbPath("TheRun.ini")));
 			
 		}
