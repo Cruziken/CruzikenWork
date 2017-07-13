@@ -30,11 +30,13 @@ public class INIfileLoader {
 		// Variables myVariables = new Variables();
 		// Creates an instance of Properties named myProps
 		myProps = new Properties();
-
+		//Creates an instance of myAbPath called myAbPath
+		AbsolutePath myAbPath = new AbsolutePath();
 		// Attempting to scan from file a to file b (file a may not exist)
 		try {
 			// Loads the keys and values from the character stream from the file
-			myProps.load(new FileInputStream("C://Users//fz3//workspace//FizzBuzz//TheRun.ini"));
+			//C://Users//fz3//workspace//FizzBuzz//TheRun.ini
+			myProps.load(new FileInputStream(myAbPath.getAbPath("TheRun.ini")));
 			
 		}
 		// Catches the exception in case the file does not exist
