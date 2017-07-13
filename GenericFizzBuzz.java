@@ -24,7 +24,7 @@ public class GenericFizzBuzz {
 		// MyINI.readIt gets the keys and values of the properties file and
 		// myVariables.getVars takes the keys' values and assigns them to
 		// variables needed to solve the FizzBuzz problem
-		myVariables.getVars(myINI.readIt());
+		myVariables.setVars(myINI.readIt());
 		// Calls the log method on this particular instance of Variables
 		// This gets the string values for the variables and sends them along
 		// with their associated variable names to the log(String content)
