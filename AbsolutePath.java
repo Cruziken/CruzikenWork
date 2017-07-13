@@ -18,7 +18,7 @@ public class AbsolutePath {
 	 * @param filename
 	 * @return
 	 */
-	public String getAbPath(String filename) {
+	public String getAbsPath(String filename) {
 		// Set whatever String is path through equal to this particular instance
 		// of filename
 		this.filename = filename;
