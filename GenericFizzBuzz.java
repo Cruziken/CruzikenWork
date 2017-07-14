@@ -2,7 +2,7 @@ package Fizzbuzz;
 
 /**
  * 
- * This class contains the main method that starts the program. 
+ * This class contains the main method that starts the program.
  *
  */
 public class GenericFizzBuzz {
@@ -31,7 +31,7 @@ public class GenericFizzBuzz {
 		// method within Writer
 		myWriter.log(myINI.readIt());
 		// Calls the setVariables method on myLogicController that takes this
-		// specific instance of Variables and gets the varible values nescessary
+		// specific instance of Variables and gets the variable values needed
 		// in order to solve FizzBuzz
 		myLogicController.setVariables(myVariables);
 		// Runs the program that solves the FizzBuzz problems and passes the
