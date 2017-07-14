@@ -1,4 +1,4 @@
-package Fizzbuzz;
+package fizzBuzz;
 
 /**
  * This class controls the logic for FizzBuzz and sends the output to the
