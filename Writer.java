@@ -17,11 +17,6 @@ public class Writer {
 	private FileWriter fileWriter;
 	// Creates a BufferedWriter variable named buffWriter
 	private BufferedWriter buffWriter;
-	// Creates a Properties variable named props
-	private Properties props;
-	// Creates a Variables instance named variables
-	private Variables variables;
-	// private AbsolutePath myAbsPath;
 
 	/**
 	 * Method allows the passing of filenames from other classes. Creates a new
@@ -78,21 +73,19 @@ public class Writer {
 		// console
 		System.out.println(content);
 	}
-	
+
 	/**
 	 * This method takes the keys and values of the properties props, converts
 	 * them to strings and has them passed to the writeFile method
 	 */
 	public void log(Properties props) {
-		// defines props as whatever Properties instance is passed through
-		this.props = props;
 		// Creates an instance of StringWriter that is a character stream that
 		// collects its output in a string buffer
 		StringWriter writer = new StringWriter();
 		// In case there is no content in the property file...
 		try {
 			// Writes the keys and values to the StringWriter
-			this.props.store(writer, "");
+			props.store(writer, "");
 		}
 		// ...Do this
 		catch (IOException e) {
@@ -101,9 +94,9 @@ public class Writer {
 		}
 		// Takes the StringWriter, returns a string buffer, then finally returns
 		// a String named INIcontent
-		String INIcontent = writer.getBuffer().toString();
+		String iniContent = writer.getBuffer().toString();
 		// Passes the content from the INIfile to the writeFile method
-		log(INIcontent);
+		log(iniContent);
 		// Closes the bufferedReader
 		closeIt();
 	}
@@ -115,7 +108,6 @@ public class Writer {
 		// Closes the buffWriter if there is something to close.
 		try {
 			buffWriter.close();
-			// fileWriter.close();
 		}
 		// If there is nothing to close...
 		catch (IOException e) {
