@@ -10,16 +10,16 @@ import java.util.Properties;
  */
 public class Variables {
 	// Creates an integer called max_int
-	private int max_int;
+	private int maxInt;
 	// Creates a integer called lower_divisor
-	private int lower_divisor;
+	private int lowerDivisor;
 	// Creates a integer called upper_divisor
-	private int upper_divisor;
+	private int upperDivisor;
 	// Creates a String called lower_divisor_label
-	private String lower_divisor_label;
+	private String lowerDivisorLabel;
 	// Creates a String integer called upper_divisor_label
-	private String upper_divisor_label;
-	// Creates a properties variable called props
+	private String upperDivisorLabel;
+	// Creates a Variables instance called variables
 	private Properties props;
 
 	/**
@@ -32,8 +32,6 @@ public class Variables {
 		// Sets the props variable equal to whatever properties object is passed
 		// through
 		this.props = props;
-		// Creates an instance of LogicController to access those methods
-		// LogicController myLogicController = new LogicController();
 		// Creates a LinkedHash map that will store the keys and values of propy
 		LinkedHashMap<String, String> mymap = new LinkedHashMap<String, String>();
 		// For as long as there are keys to convert to string in the file, call
@@ -45,17 +43,17 @@ public class Variables {
 			mymap.put(key, value);
 		}
 		// Assigns max_int the value of the key "max_int"
-		max_int = intIt(mymap.get("max_int"));
+		maxInt = intIt(mymap.get("max_int"));
 		// Assigns lower_divisor the value of the key "lower_divisor"
-		lower_divisor = intIt(mymap.get("lower_divisor"));
+		lowerDivisor = intIt(mymap.get("lower_divisor"));
 		// Assigns upper_divisor the value of the key "upper_divisor"
-		upper_divisor = intIt(mymap.get("upper_divisor"));
+		upperDivisor = intIt(mymap.get("upper_divisor"));
 		// Assigns lower_divisor_label the value of the key
 		// "lower_divisor_label"
-		lower_divisor_label = (mymap.get("lower_divisor_label"));
+		lowerDivisorLabel = (mymap.get("lower_divisor_label"));
 		// Assigns upper_divisor_label the value of the key
 		// "upper_divisor_label"
-		upper_divisor_label = (mymap.get("upper_divisor_label"));
+		upperDivisorLabel = (mymap.get("upper_divisor_label"));
 
 	}
 
@@ -64,9 +62,9 @@ public class Variables {
 	 * 
 	 * @return
 	 */
-	int getMax_Int() {
+	int getMaxInt() {
 
-		return max_int;
+		return maxInt;
 	}
 
 	/**
@@ -74,8 +72,8 @@ public class Variables {
 	 * 
 	 * @return
 	 */
-	int getLower_Divisor() {
-		return lower_divisor;
+	int getLowerDivisor() {
+		return lowerDivisor;
 	}
 
 	/**
@@ -84,8 +82,8 @@ public class Variables {
 	 * @return
 	 */
 
-	int getUpper_Divisor() {
-		return upper_divisor;
+	int getUpperDivisor() {
+		return upperDivisor;
 	}
 
 	/**
@@ -94,8 +92,8 @@ public class Variables {
 	 * @return
 	 */
 
-	String getLower_Divisor_Label() {
-		return lower_divisor_label;
+	String getLowerDivisorLabel() {
+		return lowerDivisorLabel;
 	}
 
 	/**
@@ -103,8 +101,8 @@ public class Variables {
 	 * 
 	 * @return
 	 */
-	String getUpper_Divisor_Label() {
-		return upper_divisor_label;
+	String getUpperDivisorLabel() {
+		return upperDivisorLabel;
 	}
 
 	/**
