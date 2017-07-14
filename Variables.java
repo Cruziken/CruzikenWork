@@ -1,4 +1,4 @@
-package fizzBuzz;
+package fizzbuzz;
 
 import java.util.LinkedHashMap;
 import java.util.Properties;
