@@ -19,8 +19,6 @@ public class Variables {
 	private String lowerDivisorLabel;
 	// Creates a String integer called upper_divisor_label
 	private String upperDivisorLabel;
-	// Creates a Variables instance called variables
-	private Properties props;
 
 	/**
 	 * This method assigns values to the variables used in the LogicController
@@ -29,9 +27,7 @@ public class Variables {
 	 * @param properties
 	 */
 	public void setVars(Properties props) {
-		// Sets the props variable equal to whatever properties object is passed
-		// through
-		this.props = props;
+	
 		// Creates a LinkedHash map that will store the keys and values of propy
 		LinkedHashMap<String, String> mymap = new LinkedHashMap<String, String>();
 		// For as long as there are keys to convert to string in the file, call
