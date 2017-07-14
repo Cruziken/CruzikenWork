@@ -43,8 +43,8 @@ public class Writer {
 		}
 		// ...do this.
 		catch (IOException e) {
-			// TODO Auto-generated catch block; Throws NullPointerException
-			e.printStackTrace();
+			// Throws NullPointerException if doesn't work
+			System.out.println("Problem in Writer contructor");
 		}
 	}
 
@@ -66,8 +66,9 @@ public class Writer {
 		}
 		// ...do this.
 		catch (IOException e) {
-			// TODO Auto-generated catch block; Throws NullPointerException
-			e.printStackTrace();
+			// Throws NullPointerException if doesn't work
+			System.out.println("Something wrong happened in log(content)");
+			;
 		}
 		// Prints out the content that other classes pass to this method to the
 		// console
@@ -89,8 +90,8 @@ public class Writer {
 		}
 		// ...Do this
 		catch (IOException e) {
-			// TODO Auto-generated catch block; Throws NullPointerException
-			e.printStackTrace();
+			// Throws NullPointerException if doesn't work
+			System.out.println("Something wrong happened in log(props)");
 		}
 		// Takes the StringWriter, returns a string buffer, then finally returns
 		// a String named INIcontent
@@ -111,8 +112,8 @@ public class Writer {
 		}
 		// If there is nothing to close...
 		catch (IOException e) {
-			// TODO Auto-generated catch block; Throws NullPointerException
-			e.printStackTrace();
+			// Throws NullPointerException if doesn't work
+			System.out.println("Something wrong happened in closeIt()");
 		}
 
 	}
