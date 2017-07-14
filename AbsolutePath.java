@@ -8,8 +8,6 @@ import java.io.File;
  *
  */
 public class AbsolutePath {
-	// Creates a string named filename
-	private String filename;
 
 	/**
 	 * This method takes a String filename and returns the absolute path of the
@@ -19,14 +17,13 @@ public class AbsolutePath {
 	 * @return
 	 */
 	public String getAbsPath(String filename) {
-		// Set whatever String is path through equal to this particular instance
-		// of filename
-		this.filename = filename;
-		//Creates a string called path that'll house our absolute file name
+		
+		
+		// Creates a string called path that'll house our absolute file name
 		String path = "";
-		//Creates a boolean bool which is true
+		// Creates a boolean bool which is true
 		boolean bool;
-		//In case there is no filename string to turn into a file...
+		// In case there is no filename string to turn into a file...
 		try {
 			// create new file out of passed filename String
 			File file = new File(filename);
@@ -35,19 +32,19 @@ public class AbsolutePath {
 			bool = file.exists();
 
 			// if file exists
-			if (bool) { 
+			if (bool) {
 				// get absolute path
 				path = file.getAbsolutePath();
 			}
 
-		} 
-		//Catch the exception
+		}
+		// Catch the exception
 		catch (Exception e) {
 
 			// if any error occurs
 			e.printStackTrace();
 		}
-		//Return the absolute path of the filename
+		// Return the absolute path of the filename
 		return path;
 	}
 }
